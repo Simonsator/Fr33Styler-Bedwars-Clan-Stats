@@ -22,7 +22,7 @@ public class BWConnection extends SQLCommunication {
 		Statement stmt = null;
 		ResultSet rs = null;
 		try {
-			rs = (stmt = con.createStatement()).executeQuery("select KILLS, WINS, LOSES,  BEDS_DESTROYED, DEATHS from `" + this.DATABASE + "`.bedwars WHERE uuid='" + pUUID.toString() + "' LIMIT 1");
+			rs = (stmt = con.createStatement()).executeQuery("select KILLS, WINS, LOSES,  BEDS_DESTROYED, DEATHS from `" + this.DATABASE + "`.BedWars WHERE uuid='" + pUUID.toString() + "' LIMIT 1");
 			if (rs.next()) {
 				return new PlayerData(rs.getInt("WINS"), rs.getInt("LOSES"), rs.getInt("BEDS_DESTROYED"), rs.getInt("DEATHS"), rs.getInt("KILLS"));
 			}
