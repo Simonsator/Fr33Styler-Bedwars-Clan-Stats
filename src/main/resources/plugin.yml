@@ -1,0 +1,7 @@
+name: Fr33style-Bedwars-ClanStat
+version: 1.0.1-SNAPSHOT
+author: Simonsator
+depends: [Clans]
+depend: [Clans]
+main: de.simonsator.partyandfriends.clans.stats.fr33stylerbedwars.BedWarsStatMain
+description: Provides stats for clans for Fr33style Bedwars
